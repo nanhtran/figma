@@ -6,4 +6,46 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* =========common============= */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ==============header============== */
+.header .body {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  color: #5f5b53;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: blue;
+  padding: 8px 21px;
+}
+.nav ul {
+  display: flex;
+}
+.nav a:hover {
+  color: #171100;
+
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
 }
